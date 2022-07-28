@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_multi_language_text_multi_language_texts",
+  "info": {
+    "displayName": "MultiLanguageText"
+  },
+  "options": {},
+  "attributes": {
+    "english": {
+      "type": "richtext",
+      "required": true
+    },
+    "spanish": {
+      "type": "richtext",
+      "required": true
+    },
+    "italian": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

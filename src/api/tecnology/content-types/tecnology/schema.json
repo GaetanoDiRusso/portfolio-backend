@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tecnologies",
+  "info": {
+    "singularName": "tecnology",
+    "pluralName": "tecnologies",
+    "displayName": "Tecnology",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "used_tecnologies"
+    },
+    "color": {
+      "type": "string",
+      "required": true,
+      "default": "#000000"
+    }
+  }
+}

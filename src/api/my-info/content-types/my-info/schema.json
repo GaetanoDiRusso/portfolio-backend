@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "my_infos",
+  "info": {
+    "singularName": "my-info",
+    "pluralName": "my-infos",
+    "displayName": "My Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "CVUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

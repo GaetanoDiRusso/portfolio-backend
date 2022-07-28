@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "quick_description": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "multi-language-text.multi-language-text"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "multi-language-text.multi-language-text",
+      "required": true
+    },
+    "frontImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "iconImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "used_tecnologies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tecnology.tecnology",
+      "mappedBy": "projects"
+    },
+    "repository_url": {
+      "type": "string"
+    },
+    "demo_url": {
+      "type": "string"
+    }
+  }
+}

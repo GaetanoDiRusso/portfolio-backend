@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_language_languages",
+  "info": {
+    "displayName": "language",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "certificateUrl": {
+      "type": "string"
+    }
+  }
+}

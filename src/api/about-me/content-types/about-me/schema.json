@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_mes",
+  "info": {
+    "singularName": "about-me",
+    "pluralName": "about-mes",
+    "displayName": "About Me",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "languages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "language.language"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "multi-language-text.multi-language-text",
+      "required": true
+    }
+  }
+}
